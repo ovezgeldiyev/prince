@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./main.css" />
+  <title>Feedback report garcon</title>
+  <style>
+    @page {
+      size: A4;
+      /* set according to letterhead area */
+      margin: 0;
+      page-break-before: always;
+    }
+
+    .break {
+      border: none;
+      margin: 0;
+      page-break-before: always;
+    }
+
+    @media print {
+      .page {
+        border: none !important;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- layout start
+    =========================================== -->
+    <section class="layout">
+      <div class="auto__container">
+        <div class="layout__inner">
+          <div class="layout__inner-title">
+            <div class="layout__inner-avatar">
+              <img src="./images/man.png" alt="">
+            </div>
+            <!-- ===== merge field =====
+              <h1>{{beneficiary.name}}</h1> 
+              -->
+            <h1>
+              AMAAN ABOU
+            </h1>
+          </div>
+          <div class="layout__inner-row">
+            <div class="layoutSide">
+              <div class="layoutSide__title">
+                <!-- ===== merge field =====
+                  <h6>À PROPOS D’{{beneficiary.profile.beneficiaryFirstName}} VOTRE FILLEUL</h6>
+                  -->
+                <h6>
+                  À PROPOS DE <br>
+                  VOTRE FILLEULE
+                </h6>
+                <div class="layoutSide__title-number">
+                  <!-- ===== merge field =====
+                  <a href="#">{{beneficiary.reference}}</a>
+                  -->
+                  <a href="">424804</a>
+                </div>
+              </div>
+              <div class="layoutSide__item">
+                <div class="layoutSide__item-icon sm">
+                  <img src="./images/side/boy.png" alt="">
+                </div>
+                <!-- ===== merge field =====
+                  <p>{{beneficiary.profile.beneficiaryFirstName}} est une garçon âgée de {{beneficiary.age}} ans vivant en Palestine </p>
+                  -->
+                <p>
+                  Abou est un garçon âgé <br>
+                  de 7 ans vivant en Palestine
+                </p>
+              </div>
+              <div class="layoutSide__item">
+                <div class="layoutSide__item-icon">
+                  <img src="./images/side/cake.png" alt="">
+                </div>
+
+                <p>
+                  Il est né  <br>
+                  le 18/11/2014
+                </p>
+              </div>
+              <div class="layoutSide__item">
+                <div class="layoutSide__item-icon">
+                  <img src="./images/side/chat.png" alt="">
+                </div>
+                <!-- ===== merge field ===== TODO (MISSING FROM RESPONSE MODEL)
+                  <p>Il parle {{beneficiary.profile.languages.french}}</p>
+                  -->
+                <p>
+                  Il parle Arabe
+                </p>
+              </div>
+              <div class="layoutSide__item">
+                <div class="layoutSide__item-icon">
+                  <img src="./images/side/family.png" alt="">
+                </div>
+                <p>
+                  La personne chargée <br>
+                  de sa tutelle est sa mère
+                </p>
+              </div>
+            </div>
+            <div class="layout__inner-content">
+              <div class="layout__inner-text sm">
+                <p>
+                  <!-- ===== merge field =====
+                    Merci de votre soutien continu en faveur d’{{beneficiary.profile.beneficiaryFirstName}}. Grâce à
+                    votre parrainage, votre filleul a accès à une éducation de
+                    qualité qui lui permettra d’avoir de meilleures chances de
+                    se construire un avenir plus serein et plein de réussite.
+                    -->
+                  Merci de votre soutien continu en faveur d’Abou. <br>
+                  Grâce à votre parrainage, votre filleul a accès à une éducation
+                  de qualité qui lui permettra d’avoir de meilleures chances
+                  de se construire un avenir plus serein et plein de réussite.
+                  <br> <br>
+                  <b>
+                    Ainsi, veuillez trouver ci-dessous le résultat scolaire final
+                    de votre filleul pour l'année académique 2022.
+                  </b>
+                </p>
+              </div>
+              <div class="layout__inner-text">
+                <h6>
+                  Éducation ET SCOLARITÉ
+                </h6>
+                <p>
+                  <!-- ===== merge field =====  TODO: missing from response model: languages, education, interests
+                    Les matières principales d’{{beneficiary.profile.beneficiaryFirstName}} sont: l’arabe, l’anglais, les
+                    mathématiques, les sciences islamiques, l’éducation
+                    physique, les sciences, l’art et l’histoire/géographie.
+                    -->
+                  L’éducation est l’outil le plus utile dans la construction <br>
+                  d’un avenir prometteur, c’est pour cela qu’elle occupe une place
+                  primordiale dans notre programme de parrainage des orphelins.
+                </p>
+                <p>
+                  Pour leur offrir le meilleur, nos orphelins à Gaza sont pris en charge
+                  par l’UNRWA, l’Office de secours et de travaux des Nations <br>
+                  unies pour les réfugiés de Palestine dans le Proche-Orient, <br>
+                  qui met à leur disposition une éducation adéquate.
+                </p>
+              </div>
+              <div class="layout__inner-text">
+                <h6>
+                  LES RÉSULTATS
+                </h6>
+                <div class="layoutResults">
+                  <div class="layoutResults__item">
+                    <h6>
+                      MOYENNE :
+                    </h6>
+                    <div class="layoutResults__item-input">
+                      15
+                    </div>
+                  </div>
+                  <div class="layoutResults__item">
+                    <h6>
+                      APPRÉCIATION :
+                    </h6>
+                    <div class="layoutResults__item-input">
+                      Très bien
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="layout__inner-text">
+                <h6>
+                  COMMENTAIRES
+                </h6>
+                <p>
+                  Les résultats d'Abou sont satisfaisants pour cette année scolaire.
+                  L'équipe pédagogique met tout en oeuvre afin d'accompagner Abou vers le chemin de la réussite.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="layout__inner-foot">
+            <p>
+              Si vous avez des questions, n'hésitez pas à nous contacter sans oublier l'identifiant de votre filleul :
+              <span>
+                424804
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- layout end
+    =========================================== -->
+    <!-- layout start
+    =========================================== -->
+    <section class="layout center">
+      <div class="auto__container">
+        <div class="layout__inner">
+          <div class="layout__inner-thanks">
+            <h2>
+              REMERCIEMENTS
+            </h2>
+            <p>
+              Les filleu(e)s sont très reconnaissants de votre générosité <br>
+              et vous remercient chaleureusement pour votre soutien. <br>
+              Grâce à vous, ils reçoivent l'éducation dont ils ont besoin pour
+              briser le cercle de la pauvreté dans lequel ils vivent avec <br> une
+              réelle opportunité d'avoir un meilleur avenir.
+            </p>
+          </div>
+          <div class="layout__inner-quote">
+            <p>
+              Le Messager d'Allah (saw) a dit:
+            </p>
+            <h3>
+              « nous serons au paradis moi <br>
+              et celui qui s'occupe de I'orphelin <br>
+              comme cela » et montra deux <br>
+              de ses doigts côte à côte
+            </h3>
+            <p>
+              [Muslim]
+            </p>
+          </div>
+          <div class="layout__inner-contact">
+            <p>
+              Muslim Hands France <br>
+              Bâtiment Energy 4, <br>
+              155 rue DR Bauer, <br>
+              93400 Saint-Ouen
+            </p>
+            <div class="layout__inner-contact-links">
+              <a href="tel:01 49 48 05 05">
+                Paris : 01 49 48 05 05
+              </a>
+              <a href="tel:04 91 11 21 12">
+                Marseille: 04 91 11 21 12
+              </a>
+              <a href="tel:04 11 11 02 99">
+                Lyon : 04 11 11 02 99
+              </a>
+              <a href="mailto:contact@muslimhands.fr">
+                contact@muslimhands.fr
+              </a>
+            </div>
+            <p>
+              Association régie par la loi 1901, <br>
+              Sous le N°1407
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- layout end
+    =========================================== -->
+  </div>
+</body>
+
+</html>

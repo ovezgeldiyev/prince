@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Auster";
+  src: url("AusterRounded-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Chaloops";
+  src: url("Chaloops-Regular.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Chaloops";
+  src: url("Chaloops-Medium.ttf") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Chaloops";
+  src: url("Chaloops-Bold.ttf") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("MyriadPro-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

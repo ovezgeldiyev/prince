@@ -1,0 +1,93 @@
+:root {
+  --main: #70c34a;
+  --text: #606060;
+  --black: #000;
+  --white: #fff;
+  /* fonts start */
+  --arial: "Arial";
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/*** 
+====================================================================
+Global Settings
+====================================================================
+   ***/
+body {
+  font-family: $mainFont;
+  font-size: 16px;
+  color: $white;
+  line-height: 20px;
+  font-weight: 500;
+  background: $white;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+  &:hover {
+    opacity: .8;
+  }
+}
+
+ul li {
+  list-style: none;
+}
+
+.auto__container {
+  max-width: 793px;
+  margin: 0 auto;
+}

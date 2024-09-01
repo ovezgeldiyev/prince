@@ -1,0 +1,160 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  position: relative;
+  font-weight: normal;
+  margin: 0px;
+  background: none;
+}
+
+.page-break {
+  border: none;
+  margin: 0;
+  page-break-before: always;
+}
+
+.wrapper {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 110px;
+  line-height: 80%;
+  font-weight: 800;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  span {
+    font-size: 40%;
+    line-height: 100%;
+    color: $main;
+    background-color: $white;
+    padding: 0.12em;
+    font-weight: 600;
+  }
+  b {
+    font-weight: 800;
+    color: $main;
+    background-color: $white;
+    padding: 0.08em;
+    padding-bottom: 0;
+    &.primary {
+      color: $primary;
+    }
+  }
+}
+h2 {
+  font-size: 54px;
+  line-height: 110%;
+  font-weight: 800;
+  color: $white;
+  &.big {
+    font-size: 70px;
+  }
+  span {
+    color: $primary;
+  }
+}
+h3 {
+  font-size: 30px;
+  line-height: 110%;
+  font-weight: 600;
+}
+h4 {
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 110%;
+}
+h5 {
+  font-size: 27px;
+  line-height: 120%;
+  font-weight: 700;
+  &.sm {
+    font-size: 28px;
+  }
+}
+h6 {
+  font-size: 17px;
+  line-height: 100%;
+  font-weight: 700;
+  &.big {
+    font-size: 20px;
+  }
+}
+p {
+  &.xlg {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  &.lg {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  &.big {
+    font-size: 22px;
+    line-height: 125%;
+    font-weight: 800;
+  }
+  &.ex {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+  }
+  &.sm {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  &.xsm {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+.input {
+  position: relative;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  &.big {
+    min-height: 90px;
+    align-items: flex-start;
+  }
+  &__outer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 7px 0;
+    &.w-35 {
+      width: calc(35% - 20px);
+    }
+    &.w-50 {
+      width: calc(50% - 20px);
+    }
+    &.w-65 {
+      width: calc(65% - 20px);
+    }
+    & > p {
+      font-size: 15px;
+      line-height: 100%;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: $white;
+    }
+  }
+  p,
+  input {
+    font-size: 15px;
+    line-height: 110%;
+    font-family: $mainFont;
+    color: $main;
+    font-weight: 600;
+    overflow: hidden;
+  }
+}

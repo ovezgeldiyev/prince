@@ -1,0 +1,435 @@
+.layout {
+  overflow: hidden;
+  position: relative;
+  size: 8.5in 10.5in;
+  min-height: 1122px;
+  background-color: $white;
+  &.first {
+    &::after {
+      display: none;
+    }
+  }
+  &::after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    content: "";
+    background-color: $primary;
+  }
+  &__bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 68%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      @include fullImage;
+    }
+  }
+  &__build {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    max-width: 340px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 1;
+    &.left {
+      right: 0;
+      left: 0;
+      max-width: 190px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &__logo {
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    img {
+      width: 100%;
+    }
+  }
+  &__title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__quote {
+    width: 100%;
+    padding: 0 0 0 50px;
+    position: relative;
+    &.big {
+      text-align: center;
+      padding: 0;
+    }
+    h5 {
+      max-width: 590px;
+      font-style: italic;
+      position: relative;
+      z-index: 2;
+      font-weight: 500;
+      b {
+        font-weight: 700;
+      }
+    }
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 305px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+    p {
+      font-weight: 500;
+      font-style: italic;
+      position: relative;
+      z-index: 2;
+      margin-bottom: 20px;
+      b {
+        font-weight: 700;
+      }
+    }
+  }
+  &__qr {
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0 10px;
+    img {
+      width: 100%;
+    }
+  }
+  &__inner {
+    min-height: 1122px;
+    position: relative;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    padding: 54px 36px;
+    box-sizing: border-box;
+    &-text {
+      text-align: center;
+      max-width: 630px;
+      margin: 0 auto;
+      p {
+        max-width: 550px;
+        margin: 0 auto 16px;
+        font-weight: 500;
+        &:last-child {
+          margin: 0;
+          max-width: unset;
+        }
+      }
+    }
+    &-row {
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+  }
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 690px;
+    margin: 0 auto;
+    &-title {
+      p {
+        font-weight: 600;
+      }
+    }
+    &-phone {
+      margin-bottom: 40px;
+      font-size: 54px;
+      line-height: 100%;
+      font-weight: 700;
+      color: $main;
+    }
+    &-info {
+      padding-bottom: 20px;
+      border-bottom: 3px solid $primary;
+      margin-bottom: 20px;
+      p {
+        font-weight: 600;
+      }
+    }
+    &-links {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+      a {
+        color: $main;
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 600;
+      }
+      hr {
+        width: 2px;
+        height: 24px;
+        margin: 0 12px;
+        background-color: $main;
+      }
+    }
+    &-social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      a {
+        width: 36px;
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 12px;
+        &:last-child {
+          margin: 0;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+    h2 {
+      line-height: 90%;
+    }
+  }
+  &Thank {
+    padding: 60px;
+    border-radius: 44px;
+    background-color: $primary;
+    color: $white;
+    margin-bottom: 44px;
+    &:last-child {
+      margin: 0;
+    }
+    h3 {
+      font-family: $autography;
+      margin-bottom: 35px;
+    }
+    p {
+      font-weight: 500;
+      margin-bottom: 22px;
+      &:last-child {
+        margin: 0;
+      }
+      b {
+        font-weight: 700;
+      }
+    }
+  }
+  &Grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -6px 30px;
+    &__item {
+      position: relative;
+      overflow: hidden;
+      width: calc(50% - 12px);
+      background-color: $primary;
+      margin: 6px;
+      &-inner {
+        width: 100%;
+        padding-bottom: 60%;
+        position: relative;
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include fullImage;
+        z-index: 3;
+      }
+    }
+  }
+  &Report {
+    &__head {
+      padding: 12px 36px;
+      background-color: $primary;
+      color: $white;
+    }
+    &__row {
+      padding: 10px 36px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #ededee;
+      p {
+        width: 160px;
+        &:last-child {
+          width: calc(100% - 160px);
+        }
+      }
+    }
+  }
+  &Rooms {
+    padding: 20px 0;
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      max-width: 580px;
+      margin: 0 auto;
+    }
+    &__item {
+      width: calc(33.3% - 10px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      &-icon {
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+        img {
+          width: 100%;
+        }
+      }
+      p {
+        font-weight: 700;
+      }
+    }
+    h6 {
+      color: $black;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+  }
+  &Image {
+    position: relative;
+    overflow: hidden;
+    width: calc(50% - 10px);
+    background-color: $primary;
+    &__inner {
+      width: 100%;
+      padding-bottom: 105%;
+      position: relative;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include fullImage;
+      z-index: 3;
+    }
+  }
+  &Banner {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 40%;
+    background-color: $primary;
+    margin-bottom: 20px;
+    &.big {
+      padding-bottom: 44%;
+    }
+    &:last-child {
+      margin: 0;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include fullImage;
+      z-index: 3;
+    }
+  }
+  &Provide {
+    margin-bottom: 40px;
+    &__title {
+      text-align: center;
+      margin-bottom: 36px;
+      h4 {
+        margin-bottom: 10px;
+      }
+    }
+    &__icons {
+      display: flex;
+      width: 100%;
+      max-width: 590px;
+      margin: 0 auto 24px;
+      padding-left: 20px;
+      img {
+        width: 100%;
+      }
+    }
+    &__text {
+      display: flex;
+      justify-content: space-between;
+      p {
+        width: calc(33.3% - 10px);
+        max-width: 210px;
+        text-align: center;
+        font-weight: 500;
+        b {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  &Info {
+    padding-top: 35px;
+    &__title {
+      max-width: 548px;
+      text-align: center;
+      margin: 0 auto 40px;
+      p {
+        margin-bottom: 35px;
+        font-weight: 700;
+      }
+      h5 {
+        font-weight: 400;
+      }
+    }
+    &__row {
+      max-width: 680px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__item {
+      width: calc(33.3% - 20px);
+      background-color: $primary;
+      border-radius: 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 16px 16px 22px 16px;
+      color: $white;
+      &-icon {
+        width: 56%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        img {
+          width: 100%;
+        }
+      }
+      p {
+        font-weight: 700;
+      }
+    }
+  }
+}

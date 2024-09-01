@@ -1,0 +1,317 @@
+.layout {
+  overflow: hidden;
+  position: relative;
+  size: 8.5in 10.5in;
+  min-height: 1122px;
+  background-color: $white;
+  &__bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      @include fullImage;
+    }
+  }
+  &__logo {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    img {
+      width: 100%;
+    }
+  }
+  &__title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 160px;
+    &.sm {
+      margin-bottom: 148px;
+    }
+    &.last {
+      margin-bottom: 50px;
+    }
+  }
+  &__link {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 100%;
+    color: $white;
+    margin: auto auto 0 auto;
+    b {
+      font-size: 32px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+  }
+  &__portrait {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+  }
+  &__inner {
+    min-height: 1122px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 36px;
+    box-sizing: border-box;
+    &.first {
+      padding: 0 36px;
+      justify-content: space-between;
+    }
+    &.last {
+      padding-bottom: 14px;
+    }
+    &-text {
+      text-align: center;
+      max-width: 585px;
+      margin: 0 auto 70px;
+    }
+  }
+  &Contact {
+    font-family: $montserrat;
+    padding: 22px 15px;
+    &__row {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__col {
+      display: flex;
+      flex-direction: column;
+    }
+    h3 {
+      color: #00baeb;
+      font-style: italic;
+      margin-bottom: 12px;
+    }
+    a,
+    p {
+      font-size: 15px;
+      line-height: 107%;
+      font-weight: 600;
+      color: $white;
+      font-family: $montserrat;
+      span {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    a {
+      display: flex;
+      align-items: center;
+    }
+    p {
+      display: flex;
+      align-items: flex-start;
+      b {
+        font-weight: 600;
+        width: calc(100% - 35px);
+      }
+    }
+  }
+  &Form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &Image {
+    border: 12px solid $white;
+    width: 100%;
+    padding-bottom: 65%;
+    position: relative;
+    margin-bottom: 48px;
+    background-color: #d3d3d3;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include fullImage;
+    }
+  }
+  &Quote {
+    padding: 0 26px 26px 26px;
+    border-radius: 35px;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto 56px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      z-index: -1;
+      img {
+        width: 100%;
+      }
+    }
+    &__logo {
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -35px;
+      position: relative;
+      img {
+        width: 100%;
+      }
+    }
+    &__text {
+      position: relative;
+      padding: 20px 24px 0 24px;
+      margin-bottom: 12px;
+      text-align: center;
+      color: $primary;
+      width: 100%;
+      span {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &.top {
+          top: 0;
+          left: 0;
+        }
+        &.bot {
+          bottom: 0;
+          right: 0;
+          img {
+            transform: scaleX(-1);
+          }
+        }
+        img {
+          width: 100%;
+        }
+      }
+      p {
+        font-weight: 800;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+    }
+    h4 {
+      color: $orange;
+    }
+  }
+  &Social {
+    padding: 0 26px 26px 26px;
+    border-radius: 35px;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto 56px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      z-index: -1;
+      img {
+        width: 100%;
+      }
+    }
+    &__logo {
+      width: 230px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -140px;
+      margin-bottom: 12px;
+      position: relative;
+      img {
+        width: 100%;
+      }
+    }
+    &__title {
+      font-size: 35px;
+      line-height: 100%;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+    &__row {
+      width: 80%;
+      max-width: 370px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &Foot {
+    margin: auto 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .layout {
+      &__link {
+        font-size: 15px;
+        margin: 0;
+        b {
+          font-size: 19px;
+        }
+      }
+    }
+    &__row {
+      display: flex;
+      align-items: center;
+      padding: 5px 0;
+      hr {
+        height: 17px;
+        margin: 0 5px;
+        width: 2px;
+        background-color: $white;
+      }
+      .layout {
+        &__link {
+          font-size: 19px;
+        }
+      }
+    }
+
+  }
+}

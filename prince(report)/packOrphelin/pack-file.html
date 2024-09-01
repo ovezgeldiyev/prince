@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./main.css" />
+  <title>PACK ORPHELIN 2022</title>
+  <style>
+    @page {
+      size: A4;
+      /* set according to letterhead area */
+      margin: 0;
+      page-break-before: always;
+    }
+
+    .break {
+      border: none;
+      margin: 0;
+      page-break-before: always;
+    }
+
+    @media print {
+      .page {
+        border: none !important;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- layout start
+    =========================================== -->
+    <section class="layout">
+      <div class="auto__container">
+        <div class="layout__inner">
+          <div class="layout__inner-title">
+            <div class="layout__inner-avatar">
+              <img src="./images/woman.png" alt="">
+            </div>
+            <!-- ===== merge field =====
+              <h1>{{beneficiary.name}}</h1> 
+              -->
+            <h1>
+              SATEIH NIMA
+            </h1>
+          </div>
+          <div class="layout__inner-row">
+            <div class="layoutSide">
+              <div class="layoutSide__title">
+                <!-- ===== merge field =====
+                  <h6>À PROPOS D’{{beneficiary.profile.beneficiaryFirstName}} VOTRE FILLEUL</h6>
+                  -->
+                <h6>
+                  À PROPOS DE NIMA <br>
+                  VOTRE FILLEULE
+                </h6>
+                <div class="layoutSide__title-number">
+                  <!-- ===== merge field =====
+                  <a href="#">{{beneficiary.reference}}</a>
+                  -->
+                  <a href="">424804</a>
+                </div>
+              </div>
+              <div class="layoutSide__item">
+                <div class="layoutSide__item-icon sm">
+                  <img src="./images/side/girl.png" alt="">
+                </div>
+                <!-- ===== merge field =====
+                  <p>{{beneficiary.profile.beneficiaryFirstName}} est une fille âgée de {{beneficiary.age}} ans vivant en Palestine </p>
+                  -->
+                <p>
+                  Nima est une fille  <br>
+                  âgée de 7 ans vivant <br>
+                  en Palestine
+                </p>
+              </div>
+              <div class="layoutSide__item">
+                <div class="layoutSide__item-icon">
+                  <img src="./images/side/chat.png" alt="">
+                </div>
+                <!-- ===== merge field ===== TODO (MISSING FROM RESPONSE MODEL)
+                  <p>Elle parle {{beneficiary.profile.languages.french}}</p>
+                  -->
+                <p>
+                  elle parle Arabe
+                </p>
+              </div>
+              <div class="layoutSide__item">
+                <div class="layoutSide__item-icon">
+                  <img src="./images/side/heart.png" alt="">
+                </div>
+                <p>
+                  elle est en bonne santé 
+                </p>
+              </div>
+              <div class="layoutSide__item">
+                <div class="layoutSide__item-icon">
+                  <img src="./images/side/family.png" alt="">
+                </div>
+                <p>
+                  La personne chargée  <br>
+                  de sa tutelle est <br>
+                  sa mère Léa
+                </p>
+              </div>
+              <div class="layoutSide__item">
+                <div class="layoutSide__item-icon">
+                  <img src="./images/side/house.png" alt="">
+                </div>
+                <p>
+                  Ils sont locataires
+                </p>
+              </div>
+            </div>
+            <div class="layout__inner-content">
+              <div class="layout__inner-text big">
+                <p>
+                  <!-- ===== merge field =====
+                    Merci de votre soutien continu en faveur d’{{beneficiary.profile.beneficiaryFirstName}}. Grâce à
+                    votre parrainage, votre filleul a accès à une éducation de
+                    qualité qui lui permettra d’avoir de meilleures chances de
+                    se construire un avenir plus serein et plein de réussite.
+                    -->
+                    Merci de votre soutien continu en faveur de Nima. <br>
+                    Grâce à votre parrainage, votre filleule a accès à une éducation <br>
+                    de qualité qui lui permettra d’avoir de meilleures chances <br>
+                    de se construire un avenir plus serein et plein de réussite.
+                </p>
+              </div>
+              <div class="layout__inner-text">
+                <h6>
+                  ÉDUCATION ET SCOLARITÉ DE NIMA
+                </h6>
+                <p>
+                  <!-- ===== merge field =====  TODO: missing from response model: languages, education, interests
+                    Les matières principales d’{{beneficiary.profile.beneficiaryFirstName}} sont: l’arabe, l’anglais, les
+                    mathématiques, les sciences islamiques, l’éducation
+                    physique, les sciences, l’art et l’histoire/géographie.
+                    -->
+                    <b>
+                      À ce jour près de 500 enfants de Muslim Hands France 
+                      sont pris en charge par l’UNRWA dans différentes écoles. 
+                      Ces établissements sont réputés pour leur excellence 
+                      académique et leurs faibles taux <br>
+                      d’abandon scolaire. 
+                    </b>
+                </p>
+                <p>
+                  La parité filles-garçons y est maintenue depuis <br>
+                  les années 1960. Depuis 2000, UNRWA enseigne les droits 
+                  de l’homme, la résolution des conflits et la tolérance, 
+                  encourageant ainsi les étudiants réfugiés de Palestine <br>
+                  à exercer et jouir de leurs droits, à défendre les valeurs <br>
+                  des droits de l’homme, à être fiers de leur identité 
+                  palestinienne et à contribuer de manière positive <br>
+                  à leur société et à la communauté internationale.
+                </p>
+              </div>
+              <div class="layout__inner-text sm">
+                <h6>
+                  MATIÈRES
+                </h6>
+                <p>
+                  Les matières principales de Nima sont: <br>
+                  l’arabe, l’anglais, les mathématiques, les sciences 
+                   islamiques, l’éducation physique, les sciences, l’art
+                  et l’histoire/géographie.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="layout__inner-foot">
+            <p>
+              Si vous avez des questions, n’hésitez pas à nous contacter en vous munissant de l’identifiant de Nima :
+              <span>
+                424804.
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- layout end
+    =========================================== -->
+  </div>
+</body>
+
+</html>
